@@ -1,0 +1,48 @@
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:peru;
+    padding: 10px 20px;
+    color: white;
+}
+.navbar-brand{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar-menu{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar-menu li {
+    margin: 0 10px;
+}
+.navbar-menu a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+.navbar-menu a:hover{
+    color: blue;
+}
+.navbar-toggle{
+    display: none;
+    font-size: 1.5rem;
+    background-color: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+@media{
+    .navbar-menu{
+        displa
+    }
+}
