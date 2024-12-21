@@ -41,8 +41,22 @@ body{
     color: white;
     cursor: pointer;
 }
-@media{
+@media ( max-width: 768px){
     .navbar-menu{
-        displa
+        display: none;
+        flex-direction: column;
+        background: color #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        padding: 10px 0;
     }
+}
+.navbar-menu.active{
+    display: flex;
+}
+.navbar-menu li {
+    text-align: center;
+    margin: 10px 0;
 }

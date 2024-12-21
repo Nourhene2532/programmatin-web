@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="formulaire.css"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+</head>
+<body>
+    <h1>Formulaire d'inscription utilisateur</h1>
+    <form method="post" action="">
+        <label for="prenom">prenom</label>
+        <input type ="text" name="prenom" id="prenom">
+        <br>
+        <br>
+        <label for="nom">nom</label>
+        <input type ="text" name="nom" id="nom">
+        <br>
+        <br>
+        <label for="mot de passe">mot de passe</label>
+        <input type ="password" name="mot de passe" id="mot de passe">
+        <br>
+        <br>
+        <label for="e_mail"> e_mail</label>
+        <input type ="email" name="e_mail" id="e_mail">
+        <br>
+        <br>
+        <label for="confirmer la mot de passe"> confirmer la mot de passe</label>
+        <input type ="password" name="confirmer la mot de passe" id="confirmer la mot de passe">
+        <br>
+        <br>
+        <fieldset>
+            <legend>Genre</legend>
+            <label for="masculin">masculin</label>
+            <input type = "radio" name = "Genre" value ="masculin" id = "masculin">
+            <label for="feminin">feminin</label>
+            <input type = "radio" name = "Genre" value ="feminin" id = "feminin">
+        </fieldset>
+        <br>
+        <label for="Pays :"> Pays :</label>
+        <select id="pays" name ="pays" required>
+            <option value="">Selectionner un pays</option>
+            <option value="France">France</option>
+            <option value="Belgique">Belgique</option>
+            <option value="Suisse">Suisse</option>
+        </select>
+        <br>
+        <br>
+        <input type="button"  value="S'inscrire" id="btn">
+    </form>
+    <div id ="success message"></div>
+    <div id ="error message"></div>
+    <script src ="controle.js" async></script>
+</body>
